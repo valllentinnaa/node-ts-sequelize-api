@@ -65,7 +65,7 @@ var createBook = function (req, res, next) { return __awaiter(void 0, void 0, vo
                 return [4 /*yield*/, book_1.default.create(__assign({}, bookInfo))];
             case 1:
                 book = _a.sent();
-                res.status(201).json({ message: 'Created the todo.' });
+                res.status(201).json({ message: 'Created the todo.', book: book });
                 return [2 /*return*/];
         }
     });

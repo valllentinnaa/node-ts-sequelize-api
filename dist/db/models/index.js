@@ -9,7 +9,6 @@ Object.defineProperty(exports, "Sequelize", { enumerable: true, get: function ()
 var config_1 = __importDefault(require("../config"));
 var env = process.env.NODE_ENV || 'development';
 var config = config_1.default[env];
-console.log(config);
 var sequelize = config.url
     ? new sequelize_1.Sequelize(config.url, config)
     : new sequelize_1.Sequelize(config.database, config.username, config.password, config);
